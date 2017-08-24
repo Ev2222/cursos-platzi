@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href="main.css" rel="stylesheet"/>
     <title>Dibujando con el Mouse</title>
 </head>
 <body>
-    <canvas height = "500" width = "500" id="areaDibujo"></canvas>
-    <p>Arrastra el mouse sobre el area de Dibujo</p>
+    <div class='container'>
+        <canvas height = "500" width = "500" id="areaDibujo"></canvas>
+        
+        <div class='colores'>
+            <div class='cuadrado red' id="buttonRed"></div>
+            <div class='cuadrado green' id="buttonGreen"></div>
+            <div class='cuadrado blue' id="buttonBlue"></div>
+            <div class='cuadrado purple' id="buttonPurple"></div>
+            <div class='cuadrado cyan' id="buttonCyan"></div>
+            <div class='cuadrado yellow' id="buttonYellow"></div>
+            <div class='cuadrado pink' id="buttonPink"></div>
+            <div class='cuadrado white' id="buttonWhite"></div>
+            <div class='cuadrado gray' id="buttonGray"></div>
+            <div class='cuadrado black' id="buttonBlack"></div>
+        </div>
+    </div>
+
+    <p>Da click sobre el area de dibujo para comenzar a pintar 
+    </br> Con doble click podras concluir tu trazo y comenzar de Nuevo :)</p>
     <script src = "eventosMouse.js"></script>
 </body>
 </html>

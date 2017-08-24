@@ -1,0 +1,60 @@
+canvas { 
+    border: 1px solid #000000;
+    float: left;
+}
+
+.cuadrado {
+    border: 1px solid #000000;
+    height: 48px;
+    width: 48px;
+}
+
+.colores {
+    border: 1px solid #000000;
+    float: left;
+}
+
+.red {
+    background: #FF0000;
+}
+
+.green {
+    background: #00FF00;
+}
+
+.blue {
+    background: #0000FF;
+}
+
+.purple {
+    background: purple;
+}
+
+.cyan {
+    background: cyan;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.pink {
+    background: pink;
+}
+
+.white {
+    background: white;
+}
+
+.gray {
+    background: gray;
+}
+
+.black {
+    background: black;
+}
+
+p {
+    clear: both;
+}
+
