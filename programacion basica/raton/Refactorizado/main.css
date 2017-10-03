@@ -1,0 +1,64 @@
+canvas { 
+    border: 1px solid #000000;
+    float: left;
+}
+
+.cuadrado {
+    border: 1px solid #000000;
+    height: 44px;
+    width: 44px;
+}
+
+.colores {
+    border: 1px solid #000000;
+    float: left;
+}
+
+[color="red"] {
+    background: #FF0000;
+}
+
+[color="green"] {
+    background: #00FF00;
+}
+
+[color="blue"] {
+    background: #0000FF;
+}
+
+[color="purple"] {
+    background: purple;
+}
+
+[color="cyan"] {
+    background: cyan;
+}
+
+[color="yellow"] {
+    background: yellow;
+}
+
+[color="pink"] {
+    background: pink;
+}
+
+[color="white"] {
+    background: white;
+}
+
+[color="gray"] {
+    background: gray;
+}
+
+[color="black"] {
+    background: black;
+}
+
+p {
+    clear: both;
+}
+
+.select {
+    height: 40px;
+    text-align: center;
+}
