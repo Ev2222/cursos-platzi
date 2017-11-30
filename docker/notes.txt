@@ -1,0 +1,156 @@
+DOCKER
+
+
+* Portabilidad	* Aislamiento 
+
+
+docker --help
+
+docker info
+
+docker version
+       -v
+
+docker images
+
+docker run [imagen]
+
+
+docker run --name miNombre ubuntu [acción: bash|ls]
+
+CNTR + P + Q
+
+docker start ID
+docker attach ID
+docker rm ID
+docker rm ID ID ID
+
+docker start ID -a
+-f force
+
+
+ps
+
+ps -a
+ps -a -q (solo id)
+
+ps -fea | grep docker
+	-fea
+
+ps --filter="name=zen"
+
+
+ps --filter="Exited=0"
+            "Running"
+            "Paused"
+            "Restarting=1"
+
+
+
+docker pull tomcat
+                  : version requerida (por defecto latest)
+
+docker run -P -d tomcat    --> -d dejar en segundo plano background
+                           --> -P cualquier puerto esta librelos puertos utilizados por el contenedor
+
+
+
+??????????
+
+docker run -ti ubuntu
+
+docker exec --help
+
+docker exec -ti ID bash
+                           --> -t bash acceso al terminal
+                           --> -i input Interactividad junto con bash
+docker stopped
+docker kill
+
+
+docker pause ID
+docker unpause ID
+
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+FROM ubuntu
+RUN apt-get update 
+RUN apt-get install -y curl
+RUN apt-get install -y vim
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+docker build .
+docker build -t imagdock_ubu_curl_vim .    --> -t tag: nombre para mi imagen
+
+docker run -ti ID bash
+docker run -ti imagdock_ubu_curl_vim bash
+
+
+
+docker history ImageName
+
+docker tag add nombreImg
+docker push nombreImg
+		se genera imagen publica
+
+docker rmi ID		-->borrar Imagenes siempre y cuando no tenga contenedores
+
+docker rm $(docker ps -qa) >> remueve todos los contenedores
+
+
+
+
+
+
+
+
+docker volume ls
+
+docker volume create --name prueba
+
+docker volume rm namevolume
+docker volume rm $(docker volume ls -q)    --> borrar volumenes
+
+docker  volume inspect probandovolumenes
+
+
+
+docker network 
+
+docker netork create nombre
+	      ls
+	      rm
+	      inspect
+	      connect
+	      disconnect
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+web:
+  build: .
+  links:
+    - redis
+  expose:
+    - "5000"
+
+redis:
+  image: redis

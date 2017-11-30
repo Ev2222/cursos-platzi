@@ -25,9 +25,7 @@ window.addEventListener('load', () => {
     buttonEvent('save-button', saveFile)  
     buttonEvent('print-button', print)
     buttonEvent('upload-button', uploadImage)
-    buttonEvent('paste-button', pasteImage)
-    
-    
+    buttonEvent('paste-button', pasteImage)  
       
 })
 

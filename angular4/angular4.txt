@@ -1,0 +1,55 @@
+Angular 4
+(google)
+Frameworbasado en JS
+permite crear Single Page Applications (SPA) ó Sigle Page Interface (SPI)
+eso significa el browser nunca te redirige a otra pagina
+
+TypeScript(microsoft) > JavaScript
+
+configuración Angular 4 > Angular CLI
+    - crear proyectos
+    - testing
+    - generar componentes
+    - ...
+
+Prerequisitos:
+Instalar/comprobar node:
+  cmd:node -v
+  v6.11.2
+
+  nvm install 8.9.1
+  nvm use 8.9.1
+
+Instalar/comprobar npm
+  npm -v
+
+Instalar Angular CLI
+desde mi directorio (C:\w\learn\Platzi\angular4)
+  npm install -g @angular/cli
+  ng
+  ng new platzisquare
+  cd platzisquare
+  ng serve
+
+http://localhost:4200/
+     //127.0.0.1:4200/
+
+Componente dentro de una app Angular 4
+cada una de las vistas debe ser un componente
+componente dentro de un modulo
+
+
+String Interpolación 
+comunicar de TypeScript a html{{}}
+             Propertie Binding HTML a TypeScript []
+             event Binding ()
+             two way Data Binding [()]
+variables, funciones, expresiones
+
+Directivas:
+
+  - Componentes
+  - Estructurales
+  - Atributos
+
+No se pueden agrgar 2 directivas a un tag

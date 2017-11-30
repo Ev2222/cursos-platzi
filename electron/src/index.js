@@ -34,10 +34,11 @@ app.on('ready', () => {
     global.win = new BrowserWindow({
         with: 800,
         height: 600,
-        title: 'Hola Mundo :)',
+        title: '¡¡Platzi Pics!!',
         center: true,     
         maximizable: true,
-        show: false
+        show: false,
+        icon: path.join('assets', 'icons', 'main-ico.png')
     })
 
     globalShortcut.register('CommandOrControl+Alt+p', () => {
@@ -86,7 +87,7 @@ app.on('ready', () => {
     global.win.loadURL(`file://${__dirname}/renderer/index.html`)
 
     // Equivalente al Inspeccionar Codigo HTML
-    global.win.toggleDevTools()
+    // global.win.toggleDevTools()
     
 })
 
